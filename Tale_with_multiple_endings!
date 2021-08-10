@@ -1,0 +1,94 @@
+#include <iostream>
+
+int main(){
+
+  int choice=0;
+  std::cout<<"     ======The Story of an ant======\n";
+  std::cout<<"\n"<<"   Once upon a time, there was an ant, but a special one. His colour was green and his size was bigger than the other ants. One day, he was walking trough the place called WoodenLake, a quite sunny forest. Suddently, a strange creature walked to him. It was an ant-bear!!\n";
+
+  ///choice 1:
+
+  std::cout<<"1) RUN\n";
+  std::cout<<"2) STAY\n";
+  std::cout<<"3) HIDE\n";
+
+  std::cin>>choice;
+
+  for(int i=3; i>0; i--){
+    if(choice>3){
+      std::cout<<"\n"<<"Sorry, wrong number. Try again.\n"<<i<<"choices remained...\n";
+      choice=0;
+      std::cin>>choice;
+    }
+    else
+      break;
+  }
+
+
+   if(choice==1)
+        std::cout<<"  The ant quickly ran in the bush near him and in a hole that he found. The ant-bear tried to find him, but he was lucky this time! He went out and climbed the three.\n";
+
+    else if(choice==2)
+      std::cout<<"  The ant froze of fear.The ant-bear was quickly approaching him. THE ANT DIED :(\n";
+
+    else if(choice==3)
+      std::cout<<"  The ant found a nutshell and he hided here. The ant-bear searched for the ant but he actually DIED! LOL! The ant walked straight ahead. He found some food.\n";
+    
+
+  //choice 2:
+/////////////////////////////////////////////////
+  if(choice==1){
+    ///2.1
+    std::cout<<"1) Jump\n";
+    std::cout<<"2) Climb even more\n";
+      choice=0;
+      std::cin>>choice;
+      if(choice==1)
+        std::cout<<"You died!\n";
+        
+      else if(choice==2){
+        std::cout<<"He didn't liked the panorama up there, but yea...the ant went down the three and walked away. He found a golden apple that was shining in the sun's rays.\n";
+
+      ///choice 3.1:
+      choice=0;
+        std::cout<<"1)Eat it\n";
+        std::cout<<"2)Don't eat it\n";
+        std::cin>>choice;
+        if(choice==1)
+          std::cout<<"The ant ate the appple and he transformed into a golden dragon. He flew away to the far lands...THE END!\n";
+        else if(choice==2)
+          std::cout<<"The ant went away from the golden apple. He was happy and satisfied with his journey...THE END!\n";}
+
+      }
+/////////////////////////////////////////////////
+  else if(choice==3){
+    //2.2
+    std::cout<<"1) Eat\n";
+    std::cout<<"2) Don't eat\n";
+    choice=0;
+
+      std::cin>>choice;
+      if(choice==1)
+       std::cout<<"You died!\n";
+      else if(choice==2){
+        std::cout<<"Anyway, he headed out that place and walked foreward. He crossed a bridge and arrived at a castle with big, tall walls. He entered the castle and saw a table full of food. Yummy, delicious food! \n";
+
+        ///choice 3.2:
+        choice=0;
+        std::cout<<"1)Eat the food!\n";
+        std::cout<<"2)Don't eat the food.\n";
+        std::cin>>choice;
+        if(choice==1)
+          std::cout<<"The ant devored the food and he got fat. He coudn't move a bit. He stayed there for so long that he got a big white beard! Lol, just joking, HE DIED!\n";
+        else if(choice==2)
+          std::cout<<"He went to the throne and he became the king of the Netherlands! THE END!\n";}
+
+      }
+/////////////////////////////////////////////////
+std::cout<<"\n";
+std::cout<<"\n"<<"====I hope you enjoyed this small journey, see you later! Bye!======";
+
+
+
+  
+}
